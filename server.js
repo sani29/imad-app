@@ -7,8 +7,8 @@ app.use(morgan('combined'));
 
 
 var content = {
-    title: "Article-One|SANIDHYA PUSHP",
-    heading:"Article-One",
+    title: "Article One|SANIDHYA PUSHP",
+    heading:"Article One",
     date:"17 August 2017",
     content:`
             <p>
