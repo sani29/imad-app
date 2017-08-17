@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = {
+var articleOne = {
     title: "Article One|SANIDHYA PUSHP",
     heading:"Article One",
     date:"17 August 2017",
