@@ -121,11 +121,11 @@ app.get('/submit-name',function(req,res){  //submit-name?name=xxxxx
     res.send(JSON.stringify(names));
 });
 
-app.get('/articles/:articleName',function(req,res){
+app.get('/articles/:articleName', function(req,res) {
     //articleName == article-one
     //articles[articleName] == content object for article-one
     // SELECT * FROM article WHERE title = 'article-one'
-    pool.query("SELECT * FROM article WHERE title = '" + req.params.articleName + " ' ", fuction(err,result) {
+    pool.query("SELECT * FROM article WHERE title = " + req.params.articleName , fuction(err,result) {
        if(err){
             res.status(500).send(err.toString());
         } else{
